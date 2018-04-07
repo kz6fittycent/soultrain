@@ -13,7 +13,7 @@ def main():
          print(ascii_file.read)
          print(ascii_file.closed)
          print(ascii2_file.read)
-         print(ascii2_file.closed))
+         print(ascii2_file.closed)
     
     
     
