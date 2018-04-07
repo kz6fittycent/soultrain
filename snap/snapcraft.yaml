@@ -1,0 +1,25 @@
+name: soultrain # check to see if it's available
+version: '1.0+git' # 
+summary: Take a ride on the SOUL TRAIN # 79 char long summary
+description: |
+  SOUL TRAIN!
+grade: stable # must be 'stable' to release into candidate/stable channels
+confinement: strict # use 'strict' once you have the right plugs
+
+apps:
+  soultrain:
+    command: soultrain
+    plugs:
+      - home
+     
+parts: 
+  my-part:
+    source: https://github.com/kz6fittycent/soultrain
+    source-type: git
+    plugin: python3
+    
+    build-packages:
+      - python3
+      
+    stage-packages:
+      - python3
